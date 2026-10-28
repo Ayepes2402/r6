@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  background: #030304;
+}
+
+body {
+  font-family: monospace;
+  overscroll-behavior: none;
+}
+
+#canvas-container,
+canvas {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+canvas {
+  display: block;
+  touch-action: none;
+}
+
+#volume-control {
+  position: fixed;
+  left: 14px;
+  bottom: 14px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: rgba(225, 228, 235, 0.62);
+  font: 8px monospace;
+  letter-spacing: 0.12em;
+  opacity: 0.58;
+  transition: opacity 180ms ease;
+}
+
+#volume-control:hover,
+#volume-control:focus-within {
+  opacity: 1;
+}
+
+#volume {
+  width: 94px;
+  height: 10px;
+  accent-color: #d8dbe2;
+  cursor: pointer;
+}
