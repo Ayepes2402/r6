@@ -2,14 +2,17 @@
 
 Visualización interactiva desarrollada con p5.js.
 
-## Publicación en GitHub Pages
+## Publicación con GitHub Actions
 
-1. En GitHub, abre **Settings → Pages**.
-2. En **Build and deployment**, selecciona **Deploy from a branch**.
-3. Selecciona la rama `main` y la carpeta `/ (root)`.
-4. Guarda los cambios y espera a que aparezca la URL publicada.
+1. Sube los cambios a la rama `main`.
+2. En GitHub, abre **Settings → Pages**.
+3. En **Build and deployment**, selecciona **GitHub Actions**.
+4. El flujo incluido en `.github/workflows/pages.yml` valida JavaScript y publica automáticamente.
+5. Abre la ejecución en **Actions** si necesitas revisar el despliegue.
 
-No es necesario realizar una compilación: GitHub Pages puede servir directamente los archivos estáticos.
+También puedes ejecutarlo manualmente desde **Actions → Deploy static page to GitHub Pages → Run workflow**.
+
+No es necesario realizar una compilación ni crear un `package.json`: GitHub Actions empaqueta directamente los archivos estáticos.
 
 ## Controles principales
 
